@@ -11,5 +11,9 @@ def home():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/dashboard_wcookie/')
+def dashboard_cookie():
+    return render_template('dashboard_wcookie.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

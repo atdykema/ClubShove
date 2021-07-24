@@ -14,14 +14,31 @@ body{
 .top-nav{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  margin: 3vh;
+  width: 90vw;
 }
 
 .top-logo{
   padding: 2vh;
   width: 100px;
   height: 100px;
+}
+
+.top-logo-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30vw;
+}
+
+.signup-login_profile-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30vw;
 }
 
 .main-feed{
