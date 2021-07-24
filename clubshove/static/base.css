@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "main-font";
+    src: url("../static/Alcubierre.otf")
+  }
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: main-font;
+  background: url(../static/images/phasnr_background_ps.png);
+}
+
+.top-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-logo{
+  padding: 2vh;
+  width: 100px;
+  height: 100px;
+}
+
+.main-feed{
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  background-color:rgba(255, 255, 255, 0.5);
+  border: solid white 5px;
+  border-radius: 10px;
+  width: 80vw;
+
+}
+
+.feed-object{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(255, 255, 255, 0.5);
+  padding: 3vw;
+  margin: 2vh;
+  border: solid white 2px;
+  border-radius: 10px;
+  
+
+}
