@@ -1,4 +1,40 @@
-{% extends "base.html" %}
+{% extends "base-main.html" %}
 
 
+{% block title %}Sign up{% endblock %}
 
+{% block profile_menu%}<div class="profile-button">Profile</div>{% endblock %}
+
+{% block body%}
+
+<div class="signup">
+
+    <h1>Sign up</h1>
+
+    <form action="" method="post" novalidate>
+        {{form.csrf_token}}
+
+        <p>
+            {{form.email.label}}<br>
+            {{form.email(size=64)}}
+        </p>
+
+        <p>
+            {{form.password.label}}<br>
+            {{form.password(size=64)}}
+        </p>
+
+        <p>
+            {{form.password_verify.label}}<br>
+            {{form.password_verify(size=64)}}
+        </p>
+
+        <p>
+            {{form.submit()}}
+        </p>
+
+    </form>
+
+</div>
+
+{% endblock %}
