@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/jpg" href="../static/images/ClubShove_placeholder.svg"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base.css')}}">
     <title>ClubShove | {% block title %}{% endblock %}</title>
 </head>
+
 <body>
-    {% block body %}
-    
-    {% endblock %}
+    <nav class="top-nav">
+        <div class="top-logo-wrapper">
+            <svg class="top-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522.12 457.52"><defs><style>.cls-1,.cls-4{font-size:193.29px;font-family:MyriadPro-Regular, Myriad Pro;}.cls-2{letter-spacing:-0.01em;}.cls-3{letter-spacing:-0.01em;}.cls-4{fill:#ff6ff3;}</style></defs><text class="cls-1" transform="translate(0 177.25) scale(1.01 1)">Club<tspan x="0" y="231.94">Sh</tspan><tspan class="cls-2" x="202.56" y="231.94">o</tspan><tspan class="cls-3" x="307.33" y="231.94">v</tspan><tspan x="398.36" y="231.94">e</tspan></text><text class="cls-4" transform="translate(24.12 161.78) scale(1.01 1)">Club<tspan x="0" y="231.94">Sh</tspan><tspan class="cls-2" x="202.56" y="231.94">o</tspan><tspan class="cls-3" x="307.33" y="231.94">v</tspan><tspan x="398.36" y="231.94">e</tspan></text></svg>
+        </div>
+        <div class="signup-login_profile-wrapper">
+            <div class="signup-login_profile">
+                {% block profile_menu%}
+
+                {% endblock%}
+            </div>
+        </div>
+    </nav>
+    <div class="main-feed">
+        {% block body %}
+
+        {% endblock %}
+    </div>
 </body>
+
 </html>
